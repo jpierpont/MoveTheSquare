@@ -9,6 +9,9 @@ public class GameController {
 			double dx = mouseX - (square.getX() + square.getWidth()/2);
 			double dy = mouseY - (square.getY() + square.getHeight()/2);
 			
+		
+			
+			
 			double moveX = 0, moveY = 0;
 			if (dx > 0) {
 				moveX = Game.MOVE_DIST;
@@ -26,6 +29,18 @@ public class GameController {
 		}
 	}
 
+	public boolean checkBounds(Game game, Square square) {
+		if(square.getX() > game.getWidth() || square.getY() > game.getHeight() || square.getX() < 0 || square.getY() < 0) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+	
+	
+	
+	
 	public void moveSquare(Game model, Square square) {
 		square.setX(square.getX() + model.getSquareDx());
 		square.setY(square.getY() + model.getSquareDy());
