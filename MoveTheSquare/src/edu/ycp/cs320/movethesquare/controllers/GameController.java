@@ -29,14 +29,14 @@ public class GameController {
 		}
 	}
 
-	public boolean checkBounds(Game game, Square square) {
-		if(square.getX() > game.getWidth() || square.getY() > game.getHeight() || square.getX() < 0 || square.getY() < 0) {
-			return false;
-		}
-		else {
-			return true;
-		}
-	}
+//	public boolean checkBounds(Game game, Square square) {
+//		if(square.getX() > game.getWidth() || square.getY() > game.getHeight() || square.getX() < 0 || square.getY() < 0) {
+//			return false;
+//		}
+//		else {
+//			return true;
+//		}
+//	}
 	
 	
 	
